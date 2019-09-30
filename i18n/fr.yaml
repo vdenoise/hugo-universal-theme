@@ -56,10 +56,10 @@
   translation: "Par"
 
 - id: recentPosts
-  translation: "Billets récents"
+  translation: "Publications récentes"
 
 - id: aboutUs
-  translation: "À propos de nous"
+  translation: "À propos"
 
 - id: newer
   translation: "Récent"

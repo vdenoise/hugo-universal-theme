@@ -22,20 +22,19 @@
                     <!-- *** LEFT COLUMN *** -->
 
                     <div class="col-md-9" id="blog-post">
+                        <h2>Articles du site en lien avec "{{.Title}}"</h2>
 
-                        <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.author }}{{ i18n "authorBy" }} <a href="#">{{ .Params.author }}</a> | {{ end }}{{ .Date.Format .Site.Params.date_format }}</p>
-
-                        <div id="post-content">
-                          {{ .Content }}
-                        </div>
-                        <!-- /#post-content -->
-                        {{ partial "related.html" . }}
-
-                        {{ if .Site.DisqusShortname }}
-                        <div id="comments">
-                            {{ template "_internal/disqus.html" . }}
-                        </div>
+                        {{ with .Params.description }}
+                        <p>{{.}}</p>
                         {{ end }}
+
+                        <ul>
+                            {{ range .Data.Pages }}
+                            <li>
+                                <a href="{{ .Permalink}}">{{ .Title }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
 
                     </div>
                     <!-- /#blog-post -->

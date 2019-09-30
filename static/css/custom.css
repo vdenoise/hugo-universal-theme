@@ -8,3 +8,11 @@
 .box-simple {
   min-height: 230px;
 }
+
+.floatRightImage
+{
+  position: relative;
+  float: right;
+  display:block;
+  padding: 0 0 0 30px;
+}
