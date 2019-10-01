@@ -52,13 +52,13 @@ paginate = 10
 [[menu.topbar]]
     weight = 2
     name = "Facebook"
-    url = "http://facebook.com"
+    url = "https://facebook.com"
     pre = "<i class='fa fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
     weight = 3
     name = "Twitter"
-    url = "http://twitter.com"
+    url = "https://twitter.com"
     pre = "<i class='fa fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
@@ -75,7 +75,7 @@ paginate = 10
 
     # Twitter
     twitter = "GoHugoIO"
-    twitterImage = "img/twitter-default.png"
+    twitterImage = "/img/twitter-default.png"
 
     # Google Maps API key (if not set will default to not passing a key.)
     googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
@@ -105,8 +105,8 @@ paginate = 10
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/logo.png"
-    logo_small = "img/logo-small.png"
+    logo = "/img/logos/logo.png"
+    logo_small = "/img/logos/logo-small.png"
     address = """<p><strong>Universal Ltd.</strong>
         <br>13/25 New Avenue
         <br>Newtown upon River
