@@ -1,192 +1,4 @@
-.clearfix:before,
-.clearfix:after,
-.navbar:before,
-.navbar:after,
-.navbar-header:before,
-.navbar-header:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after,
-.navbar:after,
-.navbar-header:after {
-  clear: both;
-}
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.pull-right {
-  float: right !important;
-}
-.pull-left {
-  float: left !important;
-}
-.hide {
-  display: none !important;
-}
-.show {
-  display: block !important;
-}
-.invisible {
-  visibility: hidden;
-}
-.text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.hidden {
-  display: none !important;
-  visibility: hidden !important;
-}
-.affix {
-  position: fixed;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-/* general styles */
-a,
-button {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-a i.fa,
-button i.fa {
-  margin: 0 5px;
-}
-.clickable {
-  cursor: pointer !important;
-}
-.required {
-  color: #6aae7a;
-}
-.accent {
-  color: #6aae7a;
-}
-.text-uppercase {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-@media (max-width: 991px) {
-  .text-center-sm {
-    text-align: center;
-  }
-}
-p.lead {
-  margin-bottom: 40px;
-}
-section,
-div.section {
-  margin-bottom: 40px;
-}
-.no-mb {
-  margin-bottom: 0 !important;
-}
-.mb-small {
-  margin-bottom: 20px !important;
-}
-.heading {
-  margin-bottom: 40px;
-}
-.heading h1,
-.heading h2,
-.heading h3,
-.heading h4,
-.heading h5 {
-  display: inline-block;
-  border-bottom: solid 5px #6aae7a;
-  line-height: 1.1;
-  margin-bottom: 0;
-  padding-bottom: 10px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-.heading h1 i.fa,
-.heading h2 i.fa,
-.heading h3 i.fa,
-.heading h4 i.fa,
-.heading h5 i.fa {
-  display: inline-block;
-  background: #6aae7a;
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
-  text-align: center;
-  color: #fff;
-  font-size: 12px;
-  line-height: 30px;
-  border-radius: 15px;
-}
-.icon {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  color: #fff;
-  line-height: 80px;
-  border-radius: 40px;
-  border: solid 1px #fff;
-  font-size: 20px;
-}
-.icon.icon-lg {
-  font-size: 30px;
-  border-width: 2px;
-}
-.ul-icons {
-  padding-left: 10px;
-}
-.ul-icons li {
-  list-style-type: none;
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-.ul-icons li i {
-  width: 20px;
-  height: 20px;
-  background: #6aae7a;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  line-height: 20px;
-  margin-right: 10px;
-}
-ul.list-style-none {
-  list-style: none;
-}
-#text-page h1,
-#text-page h2,
-#text-page h3 {
-  font-weight: 700;
-}
-#error-page {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 100px;
-}
-#error-page h4 {
-  margin-bottom: 40px;
-}
-#error-page p.buttons {
-  margin-top: 40px;
-}
-.pages-listing .item {
-  text-align: center;
-}
-.pages-listing .item h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  letter-spacing: 0.08em;
-}
-.pages-listing .item h3 a {
-  color: #555555;
-}
-.pages-listing .item .text {
+m .text {
   margin-bottom: 20px;
 }
 .pages-listing .item .text p {
@@ -1143,7 +955,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .home-carousel {
   position: relative;
-  background: url('../img/photogrid.jpg') center center repeat;
+  background: url('../img/group-photos/group-photos-collage.jpg') center center repeat;
   background-size: cover;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1726,7 +1538,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: url('../img/texture-bw.png') center center repeat;
+  background: url('../img/texture-green.png') center center repeat;
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -1774,7 +1586,7 @@ fieldset[disabled] .btn-template-primary.active {
   background-size: cover;
 }
 .bar.background-image-fixed-2 {
-  background: url('../img/fixed-background-2.jpg') center top no-repeat;
+  background: url('../img/group-photos/2019-rentree-messe-routier-lecture.jpg') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
