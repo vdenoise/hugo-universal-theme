@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- *** LEFT COLUMN *** -->
+
+                    <div class="col-md-9" id="blog-post">
+                        <img src="/img/banners/2019-banner-rasso-fete-de-groupe.jpg" width="100%"></img>
+                        <h2>Articles du site en lien avec "{{.Title}}"</h2>
+
+                        {{ with .Params.description }}
+                        <p>{{.}}</p>
+                        {{ end }}
+
+                        <ul>
+                            {{ range .Data.Pages }}
+                            <li>
+                                <a href="{{ .Permalink}}">{{ .Title }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+
+                    </div>
+                    <!-- /#blog-post -->
+
+                    <!-- *** LEFT COLUMN END *** -->
+
+                    <!-- *** RIGHT COLUMN *** -->
+
+                    <div class="col-md-3">
+
+                        <!-- *** MENUS AND WIDGETS *** -->
+
+                        {{ partial "sidebar.html" . }}
+
+                        <!-- *** MENUS AND FILTERS END *** -->
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <!-- *** RIGHT COLUMN END *** -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
